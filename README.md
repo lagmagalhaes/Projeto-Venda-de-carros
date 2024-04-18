@@ -10,3 +10,8 @@ Em outras palavras, é o total acumulado do ano até ao momento.</p>
 ### Vendas Totais do Mês até a Data (MTD)
 <p>Assim como o YTD (Year-to-Date), a função MTD (Month-to-Date) é usada para calcular medidas acumuladas, mas especificamente para o período atual do mês.
 Refere-se aos valores acumulados desde o início do mês até a data atual.</p>
+
+### Crescimento Ano a Ano (YOY) nas Vendas Totais
+<p>A função YOY em DAX é uma medida que pode ser usada para calcular a variação percentual ou absoluta entre os valores de um determinado período e os valores correspondentes do ano anterior. Por exemplo, se  tivermos dados de vendas mensais, pode usar a função YOY para calcular quanto as vendas deste mês diferem das vendas do mesmo mês no ano passado.
+Depois de se ter a métrica do ano atual e anterior,é necessário fazer uma divisão no Power bi.</p>
+<p></p>Como estamos a analisar uma variação entre períodos, o resultado é um percentual %.</p>
