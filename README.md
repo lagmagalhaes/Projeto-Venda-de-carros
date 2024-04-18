@@ -26,13 +26,13 @@ Como estamos a analisar uma variação entre períodos, o resultado é um percen
 <b>Função:SAMEPERIODLASTYEAR</b>
 
 ### Parte 1: Requisitos das Vendas (Medidas)
-<p>Vendas Totais do Ano até a Data (YTD) </p>
+#### Vendas Totais do Ano até a Data (YTD) 
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
-<p>Vendas Totais do Mês até a Data (MTD)</p>
+#### Vendas Totais do Mês até a Data (MTD)
 MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
 
-<p>Crescimento Ano a Ano (YOY) nas Vendas Totais</p>
+#### Crescimento Ano a Ano (YOY) nas Vendas Totais
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
 <p>Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)</p>
