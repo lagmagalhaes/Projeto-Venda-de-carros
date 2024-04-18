@@ -6,3 +6,7 @@ O Dashboad deve fornecer insights em tempo real sobre os principais indicadores 
 ### Vendas Totais do Ano até a Data (YTD) 
 <p>A função YTD (Year-to-Date)em DAX é frequentemente usada para calcular medidas acumuladas ao longo do ano até a data atual.
 Em outras palavras, é o total acumulado do ano até ao momento.</p>
+
+### Vendas Totais do Mês até a Data (MTD)
+<p>Assim como o YTD (Year-to-Date), a função MTD (Month-to-Date) é usada para calcular medidas acumuladas, mas especificamente para o período atual do mês.
+Refere-se aos valores acumulados desde o início do mês até a data atual.</p>
