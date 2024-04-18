@@ -2,7 +2,7 @@
 É uma concessionária de carros que vende diversos modelos de automóveis. 
 O objetivo deste projeto é projetar e desenvolver um Dashboard de Vendas de Carros dinâmico e interativo usando o Power BI. Com o Dashboard conseguimos visualizar KPIs críticos relacionados as vendas de carros, ajudando a entender o desempenho das vendas ao longo do tempo e a tomar decisões orientadas por dados.
 O Dashboad deve fornecer insights em tempo real sobre os principais indicadores de desempenho (KPIs) relacionados aos nossos dados de vendas. Isso nos permitirá tomar decisões informadas, monitorar o progresso e identificar tendências e oportunidades de crescimento.
-## Visão Geral das Vendas:
+## Explicação das funções:
 ### YTD (Year-to-Date) 
 <p>A função YTD em DAX é frequentemente usada para calcular medidas acumuladas ao longo do ano até a data atual.
 Em outras palavras, é o total acumulado do ano até ao momento.</p>
@@ -24,4 +24,23 @@ Como estamos a analisar uma variação entre períodos, o resultado é um percen
 ### LY (Last Year)
 <p>LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calcular medidas ou valores correspondentes ao mesmo período do ano anterior.</p>
 <b>Função:SAMEPERIODLASTYEAR</b>
+
+## Visão Geral das Vendas:
+Vendas Totais do Ano até a Data (YTD) 
+YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
+
+Vendas Totais do Mês até a Data (MTD)
+MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
+
+Crescimento Ano a Ano (YOY) nas Vendas Totais
+YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
+
+Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)
+Primeiro: 
+PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))
+Segundo:
+Sales difference = [YTD Total Sales] -[PYTD Total Sales]
+
+
+
 
