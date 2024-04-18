@@ -25,7 +25,7 @@ Como estamos a analisar uma variação entre períodos, o resultado é um percen
 <p>LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calcular medidas ou valores correspondentes ao mesmo período do ano anterior.</p>
 <b>Função:SAMEPERIODLASTYEAR</b>
 
-## Visão Geral das Vendas:
+## Parte 1: Requisitos das Vendas (Medidas)
 <p>Vendas Totais do Ano até a Data (YTD) </p>
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
@@ -63,7 +63,8 @@ YoY Car Sold Growth = [Cars Sold Diff] - [YTD Cars Sold]
 <p>Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD</p>
 Sales difference = [YTD Total Sales] -[PYTD Total Sales]
 
+#### Parte 2: Requisitos de Gráficos
 
-
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros/assets/166879716/76054307-800a-4faa-ba10-67e27b9d6b38)
 
 
