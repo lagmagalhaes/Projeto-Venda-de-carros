@@ -26,20 +26,43 @@ Como estamos a analisar uma variação entre períodos, o resultado é um percen
 <b>Função:SAMEPERIODLASTYEAR</b>
 
 ## Visão Geral das Vendas:
-Vendas Totais do Ano até a Data (YTD) 
+<p>Vendas Totais do Ano até a Data (YTD) </p>
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
-Vendas Totais do Mês até a Data (MTD)
+<p>Vendas Totais do Mês até a Data (MTD)</p>
 MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
 
-Crescimento Ano a Ano (YOY) nas Vendas Totais
+<p>Crescimento Ano a Ano (YOY) nas Vendas Totais</p>
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
-Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)
-Primeiro: 
-PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))
-Segundo:
+<p>Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)</p>
+<p>Primeiro: </p>
+<p>PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))</p>
+<p>Segundo:</p>
+<p>Sales difference = [YTD Total Sales] -[PYTD Total Sales]</p>
+
+<p>Análise do Preço Médio:</p>
+<p> Médio YTD</p>
+YTD Cars Sold = TOTALYTD(count(car_data[Car_id]), 'Date'[Date])
+
+<p>Preço Médio MTD</p>
+MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
+
+<p>Crescimento Ano a Ano no Preço Médio</p>
+<p>Diferença entre o Preço Médio YTD e o Preço Médio PTYD</p>
+<p>Métricas de Carros Vendidos:</p>
+<p>Carros Vendidos YTD</p>
+YTD Cars Sold = TOTALYTD(count(car_data[Car_id]), 'Date'[Date])
+
+<p>Carros Vendidos MTD</p>
+MTD Cars Sold = TOTALMTD(COUNT(car_data[Car_id]), 'Date'[Date])
+
+<p>Crescimento Ano a Ano nos Carros Vendidos</p>
+YoY Car Sold Growth = [Cars Sold Diff] - [YTD Cars Sold]
+
+<p>Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD</p>
 Sales difference = [YTD Total Sales] -[PYTD Total Sales]
+
 
 
 
