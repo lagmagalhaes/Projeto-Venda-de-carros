@@ -35,32 +35,32 @@ MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
 #### Crescimento Ano a Ano (YOY) nas Vendas Totais
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
-<p>Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)</p>
-<p>Primeiro: </p>
-<p>PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))</p>
-<p>Segundo:</p>
-<p>Sales difference = [YTD Total Sales] -[PYTD Total Sales]</p>
+#### Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)
+##### Primeiro: 
+PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))
+##### Segundo:
+Sales difference = [YTD Total Sales] -[PYTD Total Sales]
 
-<p>Análise do Preço Médio:</p>
-<p> Médio YTD</p>
+#### Análise do Preço Médio:
+##### Médio YTD
 YTD Cars Sold = TOTALYTD(count(car_data[Car_id]), 'Date'[Date])
 
-<p>Preço Médio MTD</p>
+##### Preço Médio MTD
 MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
 
-<p>Crescimento Ano a Ano no Preço Médio</p>
+##### Crescimento Ano a Ano no Preço Médio
 <p>Diferença entre o Preço Médio YTD e o Preço Médio PTYD</p>
 <p>Métricas de Carros Vendidos:</p>
 <p>Carros Vendidos YTD</p>
 YTD Cars Sold = TOTALYTD(count(car_data[Car_id]), 'Date'[Date])
 
-<p>Carros Vendidos MTD</p>
+##### Carros Vendidos MTD
 MTD Cars Sold = TOTALMTD(COUNT(car_data[Car_id]), 'Date'[Date])
 
-<p>Crescimento Ano a Ano nos Carros Vendidos</p>
+##### Crescimento Ano a Ano nos Carros Vendidos
 YoY Car Sold Growth = [Cars Sold Diff] - [YTD Cars Sold]
 
-<p>Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD</p>
+##### Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD
 Sales difference = [YTD Total Sales] -[PYTD Total Sales]
 
 ### Parte 2: Requisitos de Gráficos
