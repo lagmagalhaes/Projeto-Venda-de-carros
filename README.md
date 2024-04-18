@@ -67,4 +67,14 @@ Sales difference = [YTD Total Sales] -[PYTD Total Sales]
 
 ![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros/assets/166879716/76054307-800a-4faa-ba10-67e27b9d6b38)
 
+<p>YTD  Vendas Semanal: Exibir um gráfico de linhas ilustrando a tendência semanal das vendas YTD. O eixo X deve representar as semanas, e o eixo Y deve mostrar o valor total das vendas.</p>
+
+<p>Vendas Totais YTD por Estilo de Carro: Visualizar a distribuição das vendas totais YTD entre diferentes estilos de carro usando um gráfico de pizza.</p>
+
+<p>Vendas Totais YTD por Cor: Apresentar a contribuição de várias cores de carros para as vendas totais YTD por meio de um gráfico de pizza.</p>
+
+<p>Carros Vendidos YTD por Região do Revendedor: Mostrar os dados de vendas YTD com base em diferentes regiões de revendedores usando um gráfico de mapa para visualizar a distribuição de vendas geograficamente.</p>
+
+<p>Tendência de Vendas da Empresa em Forma de Grade: Fornecer uma grade tabular que exibe a tendência de vendas para cada empresa. A grade deve mostrar o nome da empresa juntamente com suas cifras de vendas YTD.</p>
+
 
