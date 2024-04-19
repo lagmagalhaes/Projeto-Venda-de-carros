@@ -27,19 +27,25 @@ LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calc
 
 ### Parte 1: Requisitos das Vendas (Medidas)
 #### Vendas Totais do Ano até a Data (YTD) 
-YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/6e93617b-0a9b-4319-b2d8-e8404c3f4f2d)
+
 
 #### Vendas Totais do Mês até a Data (MTD)
-MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/8d8e9fb8-b2a6-4ae0-95d9-73ddc4dc44f4)
+
 
 #### Crescimento Ano a Ano (YOY) nas Vendas Totais
-YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/701365c3-4aae-403a-88d0-c9a62a4a45ae)
+
 
 #### Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)
 **Primeiro:**
-PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/c179bb45-0daf-403a-9c99-4fc14b8ff336)
+
 **Segundo:**
-Sales difference = [YTD Total Sales] -[PYTD Total Sales]
+
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/a3d8dd40-79fe-4a83-b43b-e2698bad39c1)
+
 
 #### Análise do Preço Médio:
 ##### Médio YTD
