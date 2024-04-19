@@ -6,13 +6,15 @@ O Dashboad deve fornecer insights em tempo real sobre os principais indicadores 
 ### YTD (Year-to-Date) 
 <p>A função YTD em DAX é frequentemente usada para calcular medidas acumuladas ao longo do ano até a data atual.
 Em outras palavras, é o total acumulado do ano até ao momento.</p>
-<b>Função:TOTALYTD</b>
+
+**Função:TOTALYTD**
 
 
 #### MTD (Month-to-Date
 <p>Assim como o YTD a função MTD é usada para calcular medidas acumuladas, mas especificamente para o período atual do mês.
 Refere-se aos valores acumulados desde o início do mês até a data atual.</p>
-<b>Função:TOTALMTD</b>
+
+**Função:TOTALMTD**
 
 
 #### YOY (Year-over-Year)
@@ -37,9 +39,9 @@ MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
 YTD Total Sales = TOTALYTD(sum(car_data[Price ($)]),'Date'[Date])
 
 #### Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)
-##### Primeiro: 
+**Primeiro:**
 PYTD Total Sales = CALCULATE(sum(car_data[Price ($)]), SAMEPERIODLASTYEAR('Date'[Date]))
-##### Segundo:
+**Segundo:**
 Sales difference = [YTD Total Sales] -[PYTD Total Sales]
 
 #### Análise do Preço Médio:
