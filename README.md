@@ -4,15 +4,15 @@ O objetivo deste projeto é projetar e desenvolver um Dashboard de Vendas de Car
 O Dashboad deve fornecer insights em tempo real sobre os principais indicadores de desempenho (KPIs) relacionados aos nossos dados de vendas. Isso nos permitirá tomar decisões informadas, monitorar o progresso e identificar tendências e oportunidades de crescimento.
 ## Explicação das funções:
 ### YTD (Year-to-Date) 
-<p>A função YTD em DAX é frequentemente usada para calcular medidas acumuladas ao longo do ano até a data atual.
-Em outras palavras, é o total acumulado do ano até ao momento.</p>
+A função YTD em DAX é frequentemente usada para calcular medidas acumuladas ao longo do ano até a data atual.
+Em outras palavras, é o total acumulado do ano até ao momento.
 
 **Função:TOTALYTD**
 
 
 #### MTD (Month-to-Date
-<p>Assim como o YTD a função MTD é usada para calcular medidas acumuladas, mas especificamente para o período atual do mês.
-Refere-se aos valores acumulados desde o início do mês até a data atual.</p>
+Assim como o YTD a função MTD é usada para calcular medidas acumuladas, mas especificamente para o período atual do mês.
+Refere-se aos valores acumulados desde o início do mês até a data atual.
 
 **Função:TOTALMTD**
 
