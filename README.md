@@ -23,7 +23,8 @@ Como estamos a analisar uma variação entre períodos, o resultado é um percen
 
 #### LY (Last Year)
 <p>LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calcular medidas ou valores correspondentes ao mesmo período do ano anterior.</p>
-<b>Função:SAMEPERIODLASTYEAR</b>
+
+**Função:SAMEPERIODLASTYEAR**
 
 ### Parte 1: Requisitos das Vendas (Medidas)
 #### Vendas Totais do Ano até a Data (YTD) 
