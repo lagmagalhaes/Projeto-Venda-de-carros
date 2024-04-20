@@ -25,51 +25,54 @@ Como estamos a analisar uma variação entre períodos, o resultado é um percen
 LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calcular medidas ou valores correspondentes ao mesmo período do ano anterior.
 **Função:SAMEPERIODLASTYEAR**
 
-### Parte 1: Requisitos das Vendas (Medidas)
+## Parte 1: Requisitos das Vendas (Medidas)
 #### Vendas Totais do Ano até a Data (YTD) 
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/6e93617b-0a9b-4319-b2d8-e8404c3f4f2d)
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/81ba2360-adc1-4187-a194-77826485f4e4)
 
 
 #### Vendas Totais do Mês até a Data (MTD)
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/8d8e9fb8-b2a6-4ae0-95d9-73ddc4dc44f4)
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/8c028631-7ae4-4948-bbca-414e3bd7aec8)
 
 
 #### Crescimento Ano a Ano (YOY) nas Vendas Totais
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/701365c3-4aae-403a-88d0-c9a62a4a45ae)
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/4406a6df-91c9-4a3b-8e65-53b20aca3812)
+
 
 
 #### Diferença entre as Vendas YTD e as Vendas do Ano Anterior até a Data (PTYD)
 **Primeiro:**
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/c179bb45-0daf-403a-9c99-4fc14b8ff336)
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/cf04a84e-b4a8-4733-9771-40dcb5410b20)
+
 
 **Segundo:**
 
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/a3d8dd40-79fe-4a83-b43b-e2698bad39c1)
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/09204276-c823-4a09-b30b-58d35691222d)
 
 
-#### Análise do Preço Médio:
-##### Médio YTD
+
+### Análise do Preço Médio:
+#### Médio YTD
 YTD Cars Sold = TOTALYTD(count(car_data[Car_id]), 'Date'[Date])
 
-##### Preço Médio MTD
+#### Preço Médio MTD
 MTD Total Sales = TOTALMTD(sum(car_data[Price ($)]),'Date'[Date])
 
-##### Crescimento Ano a Ano no Preço Médio
+#### Crescimento Ano a Ano no Preço Médio
 <p>Diferença entre o Preço Médio YTD e o Preço Médio PTYD</p>
 <p>Métricas de Carros Vendidos:</p>
 <p>Carros Vendidos YTD</p>
 YTD Cars Sold = TOTALYTD(count(car_data[Car_id]), 'Date'[Date])
 
-##### Carros Vendidos MTD
+#### Carros Vendidos MTD
 MTD Cars Sold = TOTALMTD(COUNT(car_data[Car_id]), 'Date'[Date])
 
-##### Crescimento Ano a Ano nos Carros Vendidos
+#### Crescimento Ano a Ano nos Carros Vendidos
 YoY Car Sold Growth = [Cars Sold Diff] - [YTD Cars Sold]
 
-##### Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD
+#### Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD
 Sales difference = [YTD Total Sales] -[PYTD Total Sales]
 
-### Parte 2: Requisitos de Gráficos
+## Parte 2: Requisitos de Gráficos
 
 ![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros/assets/166879716/76054307-800a-4faa-ba10-67e27b9d6b38)
 
