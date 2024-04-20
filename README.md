@@ -59,8 +59,9 @@ LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calc
 #### Crescimento Ano a Ano no Preço Médio
 <p>Diferença entre o Preço Médio YTD e o Preço Médio PTYD</p>
 <p>Métricas de Carros Vendidos:</p>
-<p>Carros Vendidos YTD</p>
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/0a71d482-7ee1-4441-89e7-3534206e6b61)
+Carros Vendidos YTD
+
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/493439cf-e06c-4884-953a-9549170eb6d9)
 
 
 #### Carros Vendidos MTD
@@ -71,7 +72,8 @@ LY em DAX geralmente se refere a "Last Year" (Ano Passado), e é usada para calc
 ![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/3b3c7ec9-2db5-4abf-b923-10b78ea4e367)
 
 #### Diferença entre os Carros Vendidos YTD e os Carros Vendidos PTYD
-![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/41ad1322-3279-4936-abb0-bda96824d7c5)
+![image](https://github.com/lagmagalhaes/Projeto-Venda-de-carros-PBI/assets/166879716/12d73082-0ce8-48fd-ae47-a51b150d6efb)
+
 
 
 ## Parte 2: Requisitos de Gráficos
